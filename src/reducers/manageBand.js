@@ -8,7 +8,7 @@ export default function manageBand(state = {bands: []}, action) {
       return { ...state, bands: [...state.bands, band] }
 
     case 'DELETE_BAND':
-      return {bands: state.filter(band => band.id !== action.id)}
+      return {bands: state.bands.filter(band => band.id !== action.id)}
 
     default:
       return state;
