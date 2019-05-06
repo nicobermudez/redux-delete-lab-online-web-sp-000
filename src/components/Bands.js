@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import Band from './Band'
 
-class Bands extends Component {
-  render() {
-    return (
-      bands
-    )
-  }
-
+const Bands = props => {
+  const bands = props.bands.map(band => <Band key={band.id}{...band} deleteBand={props.deleteBand}/>)
 }
 
 export default Bands
