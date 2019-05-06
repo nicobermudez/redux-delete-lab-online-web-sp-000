@@ -1,7 +1,7 @@
 export default function manageBand(state = {bands: []}, action) {
   switch (action.type) {
     case 'ADD_BAND':
-      const todo = {
+      const band = {
         id: Math.random()*10000000000000000,
         text: action.payload.text
       }
