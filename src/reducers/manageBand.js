@@ -3,7 +3,7 @@ export default function manageBand(state = {bands: []}, action) {
     case 'ADD_BAND':
       const band = {
         id: Math.random()*10000000000000000,
-        text: action.payload.text
+        name: action.name
       }
       return { ...state, bands: [...state.bands, band] }
 
