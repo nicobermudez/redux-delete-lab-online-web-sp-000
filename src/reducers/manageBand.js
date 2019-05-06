@@ -5,7 +5,7 @@ export default function manageBand(state = {bands: []}, action) {
         id: Math.random()*10000000000000000,
         text: action.payload.text
       }
-      return { ...state, bands: [...state.bands, action.name] }
+      return { ...state, bands: [...state.bands, band] }
 
     case 'DELETE_BAND':
       return {bands: state.filter(band => band.id !== action.payload)}
