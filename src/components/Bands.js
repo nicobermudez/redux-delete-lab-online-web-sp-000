@@ -4,7 +4,7 @@ import Band from './Band'
 class Bands extends Component {
   render() {
     return (
-
+      bands
     )
   }
 
